@@ -9,7 +9,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook --no-dll --quiet",
-    "coverage": "react-scripts test --coverage --watchAll=false"
+    "coverage": "react-scripts test --coverage --watchAll=false",
+    "coverall": "npm run coverage  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -71,18 +72,19 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "@types/styled-components": "^5.1.2",
     "@types/jest": "^24.9.1",
     "@types/node": "^12.12.54",
     "@types/react": "^16.9.46",
     "@types/react-dom": "^16.9.8",
+    "@types/styled-components": "^5.1.2",
     "babel-loader": "^8.1.0",
-    "react-docgen-typescript-loader": "^3.7.2",
-    "react-is": "^16.13.1",
+    "coveralls": "^3.1.0",
     "react": ">=16.13.1",
+    "react-docgen-typescript-loader": "^3.7.2",
     "react-dom": ">=16.13.1",
+    "react-is": "^16.13.1",
     "react-scripts": "3.4.3",
-    "typescript": "^3.7.5",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "typescript": "^3.7.5"
   }
 }
