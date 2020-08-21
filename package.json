@@ -15,7 +15,7 @@
     "extends": "react-app"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/jeffery021121"
+    "registry": "https://npm.pkg.github.com/@jeffery021121"
   },
   "repository": {
     "type": "git",
